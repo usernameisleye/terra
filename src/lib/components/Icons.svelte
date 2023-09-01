@@ -3,7 +3,7 @@
 </script>
 
 {#each icons as { Icon, text }, i }
-    <div class="bg-muted p-3 rounded-full border border-muted-foreground text-muted-foreground w-fit cursor-pointer hover:text-foreground hover:scale-95" title={text}>
+    <div class="bg-muted h-14 w-14 grid place-items-center rounded-full border border-muted-foreground text-muted-foreground cursor-pointer hover:text-foreground hover:scale-95">
         <Icon />
     </div>
 {/each}

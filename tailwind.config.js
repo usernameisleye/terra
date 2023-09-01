@@ -66,6 +66,7 @@ export default {
       },
       animation: {
         scroll: 'scroll 30s linear infinite',
+        enter: 'enter both ease-in-out',
       },
       keyframes: {
         'scroll': {
@@ -75,7 +76,14 @@ export default {
           to: {
             transform: 'translateX(calc(-100% - 1rem))'
           },
-        }
+        },
+        'enter': {
+          from: {
+            translate: '0 100%',
+            scale: '0.25',
+            opacity: '0.5'
+          }
+        },
       },
     },
   },

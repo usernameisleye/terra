@@ -17,20 +17,9 @@ import {
     UtensilsCrossed,
 } from "lucide-svelte"
 
-// export const colors: string[] = [
-//     "slate-500", "slate-600", "slate-700", "slate-800", "slate-900",
-//     "red-500", "red-600", "red-700", "red-800", "red-900",
-//     "orange-500", "orange-600", "orange-700", "orange-800", "orange-900",
-//     "yellow-500", "yellow-600", "yellow-700", "yellow-800", "yellow-900",
-//     "green-500", "green-600", "green-700", "green-800", "green-900",
-//     "emerald-500", "emerald-600", "emerald-700", "emerald-800", "emerald-900",
-//     "cyan-500", "cyan-600", "cyan-700", "cyan-800", "cyan-900",
-//     "blue-500", "blue-600", "blue-700", "blue-800", "blue-900",
-//     "purple-500", "purple-600", "purple-700", "purple-800", "purple-900",
-//     "teal-500", "teal-600", "teal-700", "teal-800", "teal-900",
-//     "pink-500", "pink-600", "pink-700", "pink-800", "pink-900",
-// ]
-// export const colors: string[] = ["gray", "maroon", "red", "purple", "fuchsia", "green", "lime", "olive", "yellow", "navy", "blue", "teal", "blueviolet", "brown", "burlywood", "cadetblue", "chocolate", "coral", "crimson", "darkcyan", "darkglodenrod", "deepink", "gold", "forestgreen", "indigo", "lightblue", "orange", "orchid", "peru", "plum", "seagreen", "salmon", "slateblue", "slategrey", "tan"]
+export const topics = ["adventure", "reading", "anime", "kitten", "background", "outdoor", "design", "growth", "plane", "Jesus", "corporate", "large", "dark", "nature", "skin", "company", "sunshine", "dangerous", "dance", "vacation", "airport", "beach", "map", "landscape", "bird", "chocolate", "beans", "tables", "water", "hotel", "winter", "village", "shapes", "fish", "people", "code", "media", "internet", "farming", "love"]
+
+export const photos: string[] = ["/photos/1.jpg", "/photos/2.jpg", "/photos/3.jpg", "/photos/4.jpg", "/photos/5.jpg", "/photos/6.jpg", "/photos/7.jpg", "/photos/8.jpg", "/photos/9.jpg", "/photos/10.jpg", "/photos/11.jpg", "/photos/12.jpg", "/photos/13.jpg", "/photos/14.jpg", "/photos/15.jpg"]
 
 export const icons = [
     {

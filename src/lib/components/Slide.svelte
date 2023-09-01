@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import { Icons } from "."
 </script>
 
-<div class="slide relative overflow-hidden flex gap-4 max-h-28 max-w-4xl m-auto">
+<div class="slide relative overflow-hidden flex gap-4 max-w-full max-h-28 m-auto mt-6 md:max-w-2xl lg:max-w-4xl">
     {#each Array.from({ length: 2 }) as _, i}
         <div class="flex gap-4 w-[calc(7rem*15)] animate-scroll">
             <Icons />
