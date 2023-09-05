@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "@tanstack/svelte-query": "^4.33.0",
     "axios": "^1.5.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",

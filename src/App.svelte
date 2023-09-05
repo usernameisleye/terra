@@ -6,7 +6,7 @@
 
   onMount(async () => {
     try {
-      const data = await fetchPhotos(`https://api.pexels.com/v1/curated?page=${1}&per_page=${20}`)      
+      const data = await fetchPhotos(`https://api.pexels.com/v1/curated?page=${2}&per_page=${20}`)      
       photos.set(data.photos)
     }
     catch (err: any) {

@@ -16,7 +16,7 @@
     ]
 </script>
 
-<nav class="fixed top-0 inset-x-0 z-10 p-3 border-b border-border bg-background/60 backdrop-blur">
+<nav class="fixed top-0 inset-x-0 z-40 p-3 border-b border-border bg-background/60 backdrop-blur">
     <div class="container flex items-center justify-between gap-2">
         <Logo />
 
