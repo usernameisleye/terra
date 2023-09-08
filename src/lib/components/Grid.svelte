@@ -2,6 +2,7 @@
   import axios from "axios"
   import { Photo, Button } from "."
   import { Loader2 } from "lucide-svelte"
+  import { photos as photoStore } from "../stores"
   import { createInfiniteQuery } from "@tanstack/svelte-query"
 
   const SCROLL_LIMIT = 10
@@ -11,7 +12,7 @@
       const url = `https://api.pexels.com/v1/curated?page=${pageParam}&per_page=${SCROLL_LIMIT}`
       const { data } = await axios.get(url, {
         headers: { Authorization: import.meta.env.VITE_API_KEY },
-      })
+      })      
       return data
     },
     //@ts-ignore
@@ -34,7 +35,7 @@
     <div class="flex flex-col items-center">
       <div class="columns-1 sm:columns-2 lg:columns-3 w-full">
         {#each $query.data.pages as { photos }}
-          {#each photos as photo (photo.id)}
+          {#each ($photoStore ?? photos) as photo (photo.id)}
             <Photo {photo} />
           {/each}
           {:else}

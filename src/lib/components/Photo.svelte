@@ -6,7 +6,7 @@
 
   export let photo: PhotoType
   let displayImage: boolean = false
-  let open = false
+  let open: boolean = false
 
   const share = (src: string, alt: string) => {
     return sharePhoto(src, alt)
@@ -56,12 +56,8 @@
       class="h-full w-full overflow-clip object-cover group-hover:scale-110 duration-200"
     />
 
-    <div
-      class="absolute -bottom-full w-full transition-all duration-300 group-hover:bottom-0"
-    >
-      <div
-        class="flex justify-between p-2 bg-gradient-to-t from-background to-transparent"
-      >
+    <div class="absolute -bottom-full w-full transition-all duration-300 group-hover:bottom-0">
+      <div class="flex justify-between p-2 bg-gradient-to-t from-background to-transparent">
         <Photographer {photographer} {photographer_url} />
 
         <div class="inline-flex items-center gap-3">
@@ -81,4 +77,6 @@
     </div>
   </div>
 </button>
-<Dialog {photo} {open} />
+{#if displayImage}
+  <Dialog {photo} {open} />
+{/if}

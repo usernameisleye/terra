@@ -1,7 +1,7 @@
 import { readable, writable } from "svelte/store"
 import type { PhotoType } from "../types"
 
-export const photos = writable<PhotoType[]>([])
+export const photos = writable<PhotoType[]>()
 
 export const modal = writable<boolean>(true)
 
