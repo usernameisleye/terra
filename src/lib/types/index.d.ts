@@ -22,3 +22,11 @@ export type PhotoType = {
   liked: boolean
   alt: string
 }
+
+export type ExtendedPhoto = {
+  next_page: string
+  page: number
+  per_page: number
+  photos: PhotoType[]
+  total_results: number
+}

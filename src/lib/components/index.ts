@@ -8,6 +8,7 @@ import Dialog from "./Dialog.svelte"
 import Navbar from "./Navbar.svelte"
 import Button from "./ui/Button.svelte"
 import ThemeMenu from "./ThemeMenu.svelte"
+import Photographer from "./ui/Photographer.svelte"
 
 export {
     Logo,
@@ -19,5 +20,6 @@ export {
     Dialog,
     Navbar,
     Button,
-    ThemeMenu
+    ThemeMenu,
+    Photographer
 }
